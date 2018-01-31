@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C20147AF2020E4FB00561119 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20147AE2020E4FB00561119 /* MessageVC.swift */; };
+		C20147B1202122AD00561119 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20147B0202122AD00561119 /* MessageCell.swift */; };
+		C262E2982020D43100854FAA /* CircleImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = C262E2972020D43100854FAA /* CircleImg.swift */; };
 		C27ADD6E201F9B5200E89C9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27ADD6D201F9B5200E89C9B /* AppDelegate.swift */; };
-		C27ADD70201F9B5200E89C9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27ADD6F201F9B5200E89C9B /* ViewController.swift */; };
+		C27ADD70201F9B5200E89C9B /* MeetingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27ADD6F201F9B5200E89C9B /* MeetingsVC.swift */; };
 		C27ADD73201F9B5200E89C9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27ADD71201F9B5200E89C9B /* Main.storyboard */; };
 		C27ADD75201F9B5200E89C9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C27ADD74201F9B5200E89C9B /* Assets.xcassets */; };
 		C27ADD78201F9B5200E89C9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27ADD76201F9B5200E89C9B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C20147AE2020E4FB00561119 /* MessageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
+		C20147B0202122AD00561119 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		C262E2972020D43100854FAA /* CircleImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImg.swift; sourceTree = "<group>"; };
 		C27ADD6A201F9B5200E89C9B /* Graduation Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Graduation Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27ADD6D201F9B5200E89C9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C27ADD6F201F9B5200E89C9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C27ADD6F201F9B5200E89C9B /* MeetingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingsVC.swift; sourceTree = "<group>"; };
 		C27ADD72201F9B5200E89C9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C27ADD74201F9B5200E89C9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C27ADD77201F9B5200E89C9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,27 +60,28 @@
 		C27ADD6C201F9B5200E89C9B /* Graduation Project */ = {
 			isa = PBXGroup;
 			children = (
-				C27ADD7F201F9BEE00E89C9B /* Module */,
+				C27ADD7F201F9BEE00E89C9B /* Meeting Module */,
 				C27ADD83201F9C4600E89C9B /* Support Files */,
 			);
 			path = "Graduation Project";
 			sourceTree = "<group>";
 		};
-		C27ADD7F201F9BEE00E89C9B /* Module */ = {
+		C27ADD7F201F9BEE00E89C9B /* Meeting Module */ = {
 			isa = PBXGroup;
 			children = (
 				C27ADD82201F9C1800E89C9B /* Model */,
 				C27ADD81201F9C1000E89C9B /* View */,
 				C27ADD80201F9BFE00E89C9B /* Controller */,
 			);
-			name = Module;
+			name = "Meeting Module";
 			sourceTree = "<group>";
 		};
 		C27ADD80201F9BFE00E89C9B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				C27ADD6D201F9B5200E89C9B /* AppDelegate.swift */,
-				C27ADD6F201F9B5200E89C9B /* ViewController.swift */,
+				C27ADD6F201F9B5200E89C9B /* MeetingsVC.swift */,
+				C20147AE2020E4FB00561119 /* MessageVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -84,6 +91,8 @@
 			children = (
 				C27ADD71201F9B5200E89C9B /* Main.storyboard */,
 				C27ADD76201F9B5200E89C9B /* LaunchScreen.storyboard */,
+				C262E2972020D43100854FAA /* CircleImg.swift */,
+				C20147B0202122AD00561119 /* MessageCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -177,7 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C27ADD70201F9B5200E89C9B /* ViewController.swift in Sources */,
+				C20147AF2020E4FB00561119 /* MessageVC.swift in Sources */,
+				C27ADD70201F9B5200E89C9B /* MeetingsVC.swift in Sources */,
+				C20147B1202122AD00561119 /* MessageCell.swift in Sources */,
+				C262E2982020D43100854FAA /* CircleImg.swift in Sources */,
 				C27ADD6E201F9B5200E89C9B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +356,7 @@
 				C27ADD7E201F9B5200E89C9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
