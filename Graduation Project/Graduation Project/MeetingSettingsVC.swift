@@ -1,46 +1,38 @@
 //
-//  MessageVC.swift
+//  MeetingSettingsVC.swift
 //  Graduation Project
 //
-//  Created by Yasmine Ghazy on 1/30/18.
+//  Created by Yasmine Ghazy on 2/2/18.
 //  Copyright © 2018 Yasmine Ghazy. All rights reserved.
 //
 
 import UIKit
 
-class MessageVC : UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-   
+class MeetingSettingsVC: UIViewController {
     
     
     @IBOutlet weak var settingsBtn: UIButton!
-    @IBOutlet weak var msgTableView: UITableView!
+    @IBOutlet weak var menuView: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
-        
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = msgTableView.dequeueReusableCell(withIdentifier: "messageCell", for: indexPath)
-        
-        return cell
-    }
-    
 
+        // Do any additional setup after loading the view.
+    }
     @IBAction func settingsBtnPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "toMeetingSettings", sender: nil)
+        if(menuView.isHidden == true){
+            menuView.isHidden = false
+        }
+        else{
+            menuView.isHidden = true
+        }
+        
     }
     
     @IBAction func backBtnPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
         
     }
-    
     /*
     // MARK: - Navigation
 
@@ -50,7 +42,5 @@ class MessageVC : UIViewController, UITableViewDelegate, UITableViewDataSource {
         // Pass the selected object to the new view controller.
     }
     */
-
-    
 
 }

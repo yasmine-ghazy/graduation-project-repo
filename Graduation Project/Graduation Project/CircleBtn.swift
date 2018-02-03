@@ -1,15 +1,14 @@
 //
-//  CircleImgView.swift
+//  CircleBtn.swift
 //  Graduation Project
 //
-//  Created by Yasmine Ghazy on 1/30/18.
+//  Created by Yasmine Ghazy on 2/2/18.
 //  Copyright © 2018 Yasmine Ghazy. All rights reserved.
 //
 
 import UIKit
 
-@IBDesignable
-class CircleImg: UIImageView {
+class CircleBtn: UIButton {
 
     /*
     // Only override draw() if you perform custom drawing.
@@ -18,6 +17,7 @@ class CircleImg: UIImageView {
         // Drawing code
     }
     */
+    
     override func awakeFromNib() {
         setupView()
     }
@@ -34,4 +34,6 @@ class CircleImg: UIImageView {
         super.prepareForInterfaceBuilder()
         setupView()
     }
+
+
 }

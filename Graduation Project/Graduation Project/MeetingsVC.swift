@@ -38,5 +38,8 @@ class MeetingsVC: UIViewController, UITableViewDelegate, UITableViewDataSource  
         
         performSegue(withIdentifier: "toMessage", sender: nil)
     }
+    @IBAction func createMeeting(_ sender: Any) {
+        performSegue(withIdentifier: "toCreate", sender: nil)
+    }
 }
 

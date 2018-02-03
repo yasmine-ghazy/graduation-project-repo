@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C20136962024BC2C00AB0816 /* CircleBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20136952024BC2C00AB0816 /* CircleBtn.swift */; };
+		C20136982024D48500AB0816 /* MeetingSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20136972024D48500AB0816 /* MeetingSettingsVC.swift */; };
+		C201369A2025017F00AB0816 /* MeetingMembersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20136992025017F00AB0816 /* MeetingMembersVC.swift */; };
 		C20147AF2020E4FB00561119 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20147AE2020E4FB00561119 /* MessageVC.swift */; };
 		C20147B1202122AD00561119 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20147B0202122AD00561119 /* MessageCell.swift */; };
+		C22519DD202352EF003016BC /* CreateMeetingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22519DC202352EF003016BC /* CreateMeetingVC.swift */; };
 		C262E2982020D43100854FAA /* CircleImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = C262E2972020D43100854FAA /* CircleImg.swift */; };
 		C27ADD6E201F9B5200E89C9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27ADD6D201F9B5200E89C9B /* AppDelegate.swift */; };
 		C27ADD70201F9B5200E89C9B /* MeetingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27ADD6F201F9B5200E89C9B /* MeetingsVC.swift */; };
@@ -18,8 +22,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C20136952024BC2C00AB0816 /* CircleBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleBtn.swift; sourceTree = "<group>"; };
+		C20136972024D48500AB0816 /* MeetingSettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingSettingsVC.swift; sourceTree = "<group>"; };
+		C20136992025017F00AB0816 /* MeetingMembersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingMembersVC.swift; sourceTree = "<group>"; };
 		C20147AE2020E4FB00561119 /* MessageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
 		C20147B0202122AD00561119 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		C22519DC202352EF003016BC /* CreateMeetingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMeetingVC.swift; sourceTree = "<group>"; };
+		C22519E020236BF4003016BC /* fa-brands-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-brands-400.ttf"; sourceTree = "<group>"; };
+		C22519E120236BF4003016BC /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-regular-400.ttf"; sourceTree = "<group>"; };
+		C237DEDD202397400064083F /* fa-solid-900.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-solid-900.ttf"; sourceTree = "<group>"; };
 		C262E2972020D43100854FAA /* CircleImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImg.swift; sourceTree = "<group>"; };
 		C27ADD6A201F9B5200E89C9B /* Graduation Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Graduation Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27ADD6D201F9B5200E89C9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +93,9 @@
 				C27ADD6D201F9B5200E89C9B /* AppDelegate.swift */,
 				C27ADD6F201F9B5200E89C9B /* MeetingsVC.swift */,
 				C20147AE2020E4FB00561119 /* MessageVC.swift */,
+				C22519DC202352EF003016BC /* CreateMeetingVC.swift */,
+				C20136972024D48500AB0816 /* MeetingSettingsVC.swift */,
+				C20136992025017F00AB0816 /* MeetingMembersVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -93,6 +107,7 @@
 				C27ADD76201F9B5200E89C9B /* LaunchScreen.storyboard */,
 				C262E2972020D43100854FAA /* CircleImg.swift */,
 				C20147B0202122AD00561119 /* MessageCell.swift */,
+				C20136952024BC2C00AB0816 /* CircleBtn.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -109,6 +124,9 @@
 			children = (
 				C27ADD79201F9B5200E89C9B /* Info.plist */,
 				C27ADD74201F9B5200E89C9B /* Assets.xcassets */,
+				C22519E020236BF4003016BC /* fa-brands-400.ttf */,
+				C22519E120236BF4003016BC /* fa-regular-400.ttf */,
+				C237DEDD202397400064083F /* fa-solid-900.ttf */,
 			);
 			name = "Support Files";
 			sourceTree = "<group>";
@@ -186,11 +204,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C22519DD202352EF003016BC /* CreateMeetingVC.swift in Sources */,
 				C20147AF2020E4FB00561119 /* MessageVC.swift in Sources */,
 				C27ADD70201F9B5200E89C9B /* MeetingsVC.swift in Sources */,
 				C20147B1202122AD00561119 /* MessageCell.swift in Sources */,
+				C201369A2025017F00AB0816 /* MeetingMembersVC.swift in Sources */,
 				C262E2982020D43100854FAA /* CircleImg.swift in Sources */,
+				C20136982024D48500AB0816 /* MeetingSettingsVC.swift in Sources */,
 				C27ADD6E201F9B5200E89C9B /* AppDelegate.swift in Sources */,
+				C20136962024BC2C00AB0816 /* CircleBtn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
