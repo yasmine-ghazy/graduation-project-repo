@@ -36,10 +36,8 @@ class MeetingsVC: UIViewController, UITableViewDelegate, UITableViewDataSource  
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        performSegue(withIdentifier: "toMessage", sender: nil)
     }
     @IBAction func createMeeting(_ sender: Any) {
-        performSegue(withIdentifier: "toCreate", sender: nil)
     }
 }
 
